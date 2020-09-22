@@ -29,7 +29,14 @@ def main():
     k = calculate()
 
     # Plot the results
-    utils.plot(k, y_min=-2, y_max=3, y_unit="1/m")
+    utils.plot(
+        k,
+        y_min=-2,
+        y_max=3,
+        x_label="x (m)",
+        y_label="k (1/m)",
+        title="Banens krumning",
+    )
 
 
 # Snippet to run main function when script is executed

@@ -41,14 +41,14 @@ def plot(
     y_min=-1,
     y_max=1,
     title="Plot",
-    x_unit="m",
-    y_unit="m",
+    x_label="x",
+    y_label="y",
 ):
     baneform = plt.figure("y(x)", figsize=(12, 3))
     plt.plot(x, y)
     plt.title(title)
-    plt.xlabel("$x$ (" + x_unit + ")", fontsize=20)
-    plt.ylabel("$y(x)$ (" + y_unit + ")", fontsize=20)
+    plt.xlabel(x_label, fontsize=20)
+    plt.ylabel(y_label, fontsize=20)
     plt.ylim(y_min, y_max)
     plt.grid()
     plt.show()

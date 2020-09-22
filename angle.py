@@ -25,7 +25,14 @@ def main():
     beta = calculate()
 
     # Plot the results
-    utils.plot(beta, y_min=-0.5, y_max=0.5, y_unit="rad")
+    utils.plot(
+        beta,
+        y_min=-0.5,
+        y_max=0.5,
+        x_label="x (m)",
+        y_label="beta (rad)",
+        title="Banens helningsvinkel",
+    )
 
 
 # Snippet to run main function when script is executed

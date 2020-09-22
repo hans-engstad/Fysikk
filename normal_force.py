@@ -13,7 +13,6 @@ def calculate():
 
     # Define some constants
     g = 9.81  # Gravity constant
-    c = 1.5  # Mass distribution constant
     m = 2  # Mass of ball (TODO: Insert correct mass)
 
     v = velocity.calculate()
@@ -41,7 +40,9 @@ def main():
     n = calculate()
 
     # Plot the results
-    utils.plot(n, y_min=0, y_max=50, y_unit="N")
+    utils.plot(
+        n, y_min=0, y_max=40, x_label="x (m)", y_label="N (N)", title="Normalkraft"
+    )
 
 
 # Snippet to run main function when script is executed
