@@ -33,7 +33,14 @@ def main():
     v = calculate()
 
     # Plot the results
-    utils.plot(v, y_min=0, y_max=2.5, x_label="x (m)", y_label="v (m/s)")
+    utils.plot(
+        v,
+        y_min=0,
+        y_max=2.5,
+        x_label="x (m)",
+        y_label="v (m/s)",
+        title="Hastighet som funksjon av horisontal posisjon",
+    )
 
 
 # Snippet to run main function when script is executed
