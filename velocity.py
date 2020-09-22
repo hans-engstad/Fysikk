@@ -33,7 +33,7 @@ def main():
     v = calculate()
 
     # Plot the results
-    utils.plot(v, y_min=0, y_max=2.5)
+    utils.plot(v, y_min=0, y_max=2.5, y_unit="m/s")
 
 
 # Snippet to run main function when script is executed

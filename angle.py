@@ -25,7 +25,7 @@ def main():
     beta = calculate()
 
     # Plot the results
-    utils.plot(beta, y_min=-0.5, y_max=0.5)
+    utils.plot(beta, y_min=-0.5, y_max=0.5, y_unit="rad")
 
 
 # Snippet to run main function when script is executed

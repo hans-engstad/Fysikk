@@ -45,7 +45,7 @@ def plot(
     y_unit="m",
 ):
     baneform = plt.figure("y(x)", figsize=(12, 3))
-    plt.plot(x, y, "*")
+    plt.plot(x, y)
     plt.title(title)
     plt.xlabel("$x$ (" + x_unit + ")", fontsize=20)
     plt.ylabel("$y(x)$ (" + y_unit + ")", fontsize=20)

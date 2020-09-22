@@ -9,14 +9,13 @@ Calculate the curvature in each of the 1400 steps (Krumning)
 def calculate():
     """Calculate the curvature, and return it as a list"""
 
-    # Retrieve derivative and 2nd derivative of y
+    # Retrieve y, derivative and 2nd derivative of y
+    y = utils.get_y()
     dy = utils.get_dy()
     d2y = utils.get_d2y()
 
     k = []  # The curvature
-    for i in range(
-        len(utils.get_y())
-    ):  # Iterate over all y elements with i as the index
+    for i in range(len(y)):  # Iterate over all y elements with i as the index
         value = d2y[i] / (1 + dy[i] ** 2) ** (3 / 2)
         k.append(value)
 
@@ -30,7 +29,7 @@ def main():
     k = calculate()
 
     # Plot the results
-    utils.plot(k, y_min=-2, y_max=3)
+    utils.plot(k, y_min=-2, y_max=3, y_unit="1/m")
 
 
 # Snippet to run main function when script is executed
