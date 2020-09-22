@@ -10,6 +10,7 @@ Calculate the normal force in each of the 1400 steps (Normalkraft)
 
 
 def calculate():
+    """Calculate the normal force, and return it as a list"""
 
     # Define some constants
     g = 9.81  # Gravity constant
