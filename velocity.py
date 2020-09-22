@@ -1,6 +1,10 @@
 import numpy as np
 import utils
 
+"""
+Calculate the velocity in each of the 1400 steps (Hastighet)
+"""
+
 # Define some constants
 g = 9.81  # Gravity constant
 c = 1.5  # Mass distribution constant

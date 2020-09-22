@@ -1,6 +1,10 @@
 import numpy as np
 import utils
 
+"""
+Calculate the angle of inclination of the track in each of the 1400 steps (Helningsvinkel)
+"""
+
 # Retrieve the derivative of y
 dy = utils.get_dy()
 

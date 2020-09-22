@@ -1,6 +1,10 @@
 import numpy as np
 import utils
 
+"""
+Calculate the curvature in each of the 1400 steps (Krumning)
+"""
+
 # Retrieve derivative and 2nd derivative of y
 dy = utils.get_dy()
 d2y = utils.get_d2y()
