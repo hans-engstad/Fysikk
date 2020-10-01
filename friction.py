@@ -40,8 +40,8 @@ def main():
     # Plot the results
     utils.plot(
         friction,
-        y_min=-5,
-        y_max=4,
+        y_min=-0.05,
+        y_max=0.05,
         x_label="x (m)",
         y_label="Friksjon (N)",
         title="Friksjon",

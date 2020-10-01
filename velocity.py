@@ -20,7 +20,7 @@ def calculate():
     v = []
     for current_y in utils.get_y():
         y_diff = first_y - current_y  # Difference from this y to first y
-        value = np.sqrt(2 * g * y_diff / c)  # Value for speed in this position
+        value = np.sqrt(2 * g * y_diff / (1 + c))  # Value for speed in this position
         v.append(value)
 
     return v
@@ -36,7 +36,7 @@ def main():
     utils.plot(
         v,
         y_min=0,
-        y_max=2.5,
+        y_max=3.5,
         x_label="x (m)",
         y_label="v (m/s)",
         title="Hastighet som funksjon av horisontal posisjon",

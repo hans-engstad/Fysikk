@@ -57,7 +57,7 @@ def main():
         y=v,
         x=time,
         y_min=0,
-        y_max=1.1,
+        y_max=2,
         x_label="t (s)",
         y_label="v (m/s)",
         title="Hastighet som funksjon av tiden",
