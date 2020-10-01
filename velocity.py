@@ -11,7 +11,7 @@ def calculate():
 
     # Define some constants
     g = 9.81  # Gravity constant
-    c = 1.5  # Mass distribution constant
+    c = 0.5  # Mass distribution constant
 
     # Retrieve the starting y position
     first_y = utils.get_y()[0]

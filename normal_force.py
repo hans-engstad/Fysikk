@@ -14,7 +14,7 @@ def calculate():
 
     # Define some constants
     g = 9.81  # Gravity constant
-    m = 2  # Mass of ball (TODO: Insert correct mass)
+    m = 0.0278  # Mass of ball (TODO: Insert correct mass)
 
     v = velocity.calculate()
     k = curvature.calculate()

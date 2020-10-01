@@ -14,8 +14,8 @@ def calculate():
 
     # Define some constants
     g = 9.81  # Gravity constant
-    c = 1.5  # Mass distribution constant
-    m = 2  # Mass of ball (TODO: Insert correct mass)
+    c = 0.5  # Mass distribution constant
+    m = 0.0278  # Mass of ball
 
     # Retrieve angle of inclination (Helningsvinkel)
     beta = angle.calculate()
