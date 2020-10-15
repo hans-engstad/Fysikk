@@ -30,7 +30,7 @@ def main():
         y_min=-0.5,
         y_max=0.5,
         x_label="x (m)",
-        y_label="beta (rad)",
+        y_label="β (rad)",
         title="Banens helningsvinkel",
     )
 

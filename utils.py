@@ -51,5 +51,6 @@ def plot(
     plt.ylabel(y_label, fontsize=20)
     plt.ylim(y_min, y_max)
     plt.grid()
+    plt.gcf().subplots_adjust(bottom=0.3, left=0.2)
     plt.show()
 
