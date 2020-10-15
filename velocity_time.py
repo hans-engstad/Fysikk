@@ -14,37 +14,6 @@ Calculate the velocity as a function of time in each of the 1400 steps
 """
 
 
-def calculate():
-    """
-    Calculate velocity at time t, and return it as a list. 
-
-    Returns: [v_0, v_1, ..., v_n] where n=1400
-
-    v_i = velocity at time t_i
-    """
-
-    # Define some constants
-    delta_x = 0.001  # Horizontal distance between each step
-
-    # Retrieve time list
-    time = x_position.calculate_time()
-
-    v = []
-    for i in range(len(time)):
-        if i == 0:
-            # Avoid division by zero for first step
-            v.append(0)
-            continue
-
-        current_time = time[i]
-        current_position = delta_x * i
-
-        value = current_position / current_time
-        v.append(value)
-
-    return v
-
-
 def get_experiment_data():
     """
     Return data captured during experiment
@@ -163,7 +132,7 @@ def main():
     """Method to execute when script is invoked"""
 
     # Retrieve velocity as function of time
-    simulation_velocity = calculate()
+    simulation_velocity = velocity.calculate()
 
     # Retrive list of times
     simulation_time = x_position.calculate_time()
